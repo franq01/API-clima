@@ -36,5 +36,5 @@ function updateDom(temperature,city,){
 Search.addEventListener('click',async ()=>{   
  await getClima(cityName.value)
  cityName.value = ''
- weatherIcon.style.display = 'none'
+ 
 })
