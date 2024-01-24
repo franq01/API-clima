@@ -20,7 +20,6 @@ function updateDom(temperature,city,){
     // se convierte de grados kelvin a celcius
     const celcius = temperature -273.15
     container.innerHTML = `<h2>Ciudad: ${city}</h2>
-    // se redondea los grados celcius
     <h2>temperatuta: ${Math.floor(celcius)}</h2>
     `
     if(celcius >= 11&& celcius <=30){
