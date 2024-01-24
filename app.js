@@ -17,7 +17,7 @@ async function getClima (city){
     })
 }
 function updateDom(temperature,city,){
-    // se convierte de grados kelvin a celcius
+    /** se redondea los grados celcius*/
     const celcius = temperature -273.15
     container.innerHTML = `<h2>Ciudad: ${city}</h2>
     <h2>temperatura: ${Math.floor(celcius)}</h2>
