@@ -11,7 +11,7 @@ async function getClima (city){
     await fetch (url).then((Response)=>{
         return Response.json()
     }).then((data)=>{
-        updateDom(data.main.temp,data.name,data.weather[0].main)
+        updateDom(data.temp,data.name,data.weather[0].main)
     }).catch((err)=>{
         console.log(err)
     })
@@ -20,7 +20,7 @@ function updateDom(temperature,city,){
     // se convierte de grados kelvin a celcius
     const celcius = temperature -273.15
     container.innerHTML = `<h2>Ciudad: ${city}</h2>
-    <h2>temperatuta: ${Math.floor(celcius)}</h2>
+    <h2>temperatura: ${Math.floor(celcius)}</h2>
     `
     if(celcius >= 11&& celcius <=30){
         body.style.backgroundColor = 'orange'
