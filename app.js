@@ -1,4 +1,4 @@
-const APIKEY = '48f9ddb395c0f386c0a157ac2c6e1c18';
+const APIKEY = '9b5d5835650e2da653cc53957800a0d4';
 const URLBASE = 'https://api.openweathermap.org/data/2.5/weather?';
 const container = document.getElementById('container')
 const cityName = document.getElementById('city')
@@ -17,7 +17,7 @@ async function getClima (city){
     })
 }
 function updateDom(temperature,city,){
-    
+
     const celcius = temperature -273.15
     container.innerHTML = `<h2>Ciudad: ${city}</h2>
     <h2>temperatura: ${Math.floor(celcius)}</h2>
