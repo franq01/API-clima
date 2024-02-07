@@ -15,7 +15,7 @@ async function getClima (city){
     }).catch((err)=>{
         console.log(err)
     })
-    console.log(data.temp,data.name,data.weather[0].main)
+    
 }
 function updateDom(temperature,city,){
 
